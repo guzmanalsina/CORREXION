@@ -1,0 +1,26 @@
+//Extends y BEM
+
+.div__noticias {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.h3__Salta {
+    @extend .div__noticias;
+    color: brown;
+    font-weight: bold;
+}
+
+.h3__neuquen {
+    @extend .div__noticias;
+    color: #35449c;
+    font-weight: bold;
+}
+
+.h3__chaco {
+    @extend .div__noticias;
+        color: #580c3f;
+        font-weight: bold;
+}
+

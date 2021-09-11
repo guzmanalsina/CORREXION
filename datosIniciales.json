@@ -1,0 +1,44 @@
+[
+    {
+       "id":1,
+       "nombre":"Marcos Bondoni",
+       "moneda":"Pesos",
+       "perfil":"INVESTIGACIÓN",
+       "plazoRecomendado":1
+    },
+    {
+       "id":3,
+       "nombre":"Lucía Perez",
+       "moneda":"Pesos",
+       "perfil":"INVESTIGACIÓN",
+       "plazoRecomendado":30
+    },
+    {
+       "id":4,
+       "nombre":"Carlos Mendez",
+       "moneda":"Pesos",
+       "perfil":"INVESTIGACIÓN",
+       "plazoRecomendado":90
+    },
+    {
+       "id":6,
+       "nombre":"Cecilia Mateo",
+       "moneda":"Pesos",
+       "perfil":"INVESTIGACIÓN",
+       "plazoRecomendado":365
+    },
+    {
+       "id":10,
+       "nombre":"Osvaldo Pistán",
+       "moneda":"Pesos",
+       "perfil":"INVESTIGACIÓN",
+       "plazoRecomendado":365
+    },
+    {
+       "id":15,
+       "nombre":"José Sitek",
+       "moneda":"Pesos",
+       "perfil":"INVESTIGACIÓN",
+       "plazoRecomendado":180
+    }
+  ]

@@ -1,0 +1,208 @@
+//Mixins y BEM para enlaces
+
+@mixin color-comodyet {
+    text-decoration: none;
+    color: #be4d99;
+    font-weight: bold;
+}
+
+.box__enlace {
+    @include color-comodyet;
+}
+
+.section__link {
+    @include color-comodyet;
+}
+
+.banner__enlace {
+    @include color-comodyet;
+}
+
+.a__enlace {
+    @include color-comodyet;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$colorPrimario: #0984e3;
+$colorPrimarioHover: #74b9ff;
+$colorSecundario: #2ecc71;
+$gris: #F3F3F3;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.contenedor {
+  padding: 0 20px;
+  margin: auto;
+  max-width: 1140px;
+}
+
+h1 {
+  font-size: 1.875rem;
+  line-height: 2.1rem;
+  color: $colorPrimario;
+  margin-top: 2rem;
+}
+
+hr {
+  margin-top: 2rem;
+}
+
+.btn {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 16px;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  background-color: $colorPrimario;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: transform 0.2s;
+}
+
+.btn:active {
+  background-color: $colorPrimarioHover;
+  outline: none;
+  transform: scale(.99);
+}
+
+.contenedorPerfilYPlazo {
+  .perfilRiesgo {
+    padding: 20px;
+    background-color: $gris;
+    margin-top: 2rem;
+    border-radius: 15px;
+  
+    .perfilRiesgo__title {
+      font-size: 1.125rem;
+      color: #1E1A33;
+    }
+  
+    p {
+      font-size: 0.75rem;
+      margin: 1rem 0 2rem 0;
+      color: #6A6680;
+    }
+  
+    form {
+      .form-group {
+        margin-top: 1rem;
+        font-size: 0.75rem;
+        color: #1E1A33;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 8.5px;
+      }
+    }
+  }
+
+  .plazoInversion {
+    padding: 20px;
+    background-color: $gris;
+    margin-top: 2rem;
+    border-radius: 15px;
+  
+    .plazoInversion__title {
+      font-size: 1.125rem;
+      color: #1E1A33;
+    }
+  
+    p {
+      font-size: 0.75rem;
+      margin: 1rem 0 2rem 0;
+      color: #6A6680;
+    }
+  
+    form {
+      .form-group {
+        margin-top: 1rem;
+        font-size: 0.75rem;
+        color: #1E1A33;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 8.5px;
+      }
+    }
+  }
+}
+
+
+.fondos {
+  margin-top: 3rem;
+
+  .fondos__title {
+    font-size: 1.375rem;
+    font-weight:700;
+    color: $colorPrimario;
+  }
+
+  .contenedorFondos {
+    margin-top: 2rem;
+
+    .fondo {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 18px 0;
+      background-color: $gris;
+      border-radius: 15px;
+      margin-top: 1rem;
+    }
+  }
+}
+
+// TABLET
+@media (min-width:600px) {
+  .contenedorFondos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 1.25rem;
+  }
+}
+
+// PC
+@media (min-width:1024px) {
+  .contenedorFondos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 1.25rem;
+  }
+
+  .contenedorPerfilYPlazo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 1.25rem;
+  }
+
+  .btn:hover {
+    background-color: $colorPrimarioHover;
+  }
+}
+

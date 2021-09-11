@@ -1,0 +1,29 @@
+
+/*Error404*/
+.error {
+    font-size: 3rem;
+    margin-top: 4rem;
+    font-family: 'Pavanam', sans-serif;
+
+
+.delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background-color: white;
+    font-size: medium;
+    }
+}
+
+
+@media (max-width: 765px) {
+    .error {
+    font-size: medium;
+    }
+    
+    .aa {
+        width: min-content;
+        font-size: small;
+    }
+}

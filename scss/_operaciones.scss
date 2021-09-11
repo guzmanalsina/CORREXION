@@ -1,0 +1,16 @@
+/*Operaciones*/
+
+$ancho: 50px;
+$white: #fdf6fd;
+
+.img__servicios {
+    width: $ancho;
+}
+
+.div__servicios {
+    background-color: $white;
+}
+
+.img__home {
+    width: ($ancho/2)+25;
+}

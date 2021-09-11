@@ -1,0 +1,37 @@
+/*Transiciones, animaciones*/
+
+.box {
+    background-image: linear-gradient(90deg, rgb(245, 233, 185) 0%, rgb(248, 209, 209) 49%, rgb(248, 224, 191) 100%);
+    width: min-content;
+    height: 30rem;
+    font-size: medium;
+}
+
+.div__transiciones {
+    background-image: url(https://image.freepik.com/vector-gratis/fondo-lineas-blancas-doradas-abstractas-baja-poli_1017-26507.jpg);
+    justify-content: center;
+    align-items: center;
+    animation-duration: 2s;
+    animation-name: aparecer;
+
+    .div__h1 {
+    font-size: 2rem;
+    }
+}
+     
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+    
+.mundo {
+    transform: scale(1,1); 
+}
+
+.mundo:hover {
+    width: 600px;
+}

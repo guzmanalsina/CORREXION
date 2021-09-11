@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "name": "Titi",
+      "surname": "Guzmán",
+      "age": 29
+    },
+    {
+      "name": "Nazarena",
+      "surname": "Velez",
+      "age": 34
+    },
+    {
+      "name": "Ariel",
+      "surname": "Tevez",
+      "age": 22
+    },
+    {
+      "name": "Mimi",
+      "surname": "Gonzales",
+      "age": 22
+    }
+  ]
+}

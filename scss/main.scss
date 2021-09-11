@@ -1,0 +1,2234 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+                                                                                                                                                                        
+html body {
+    text-align: center;
+    min-width: 100%;
+    max-width: 100%;
+}
+                                                                                                                           
+.body {
+    border: none;
+    color: #111;
+    background-color: #fafafa;
+    font-family: 'Pavanam', sans-serif;
+    font-size: 17px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.d-none {
+    display: none;
+}
+
+/*usando flex*/
+
+.flex {
+    display: flex;
+    flex-direction:column;
+    background-color:#fafafa;
+    margin-left: 0px;
+    text-align: justify;
+    width: 65em;
+    justify-content: center;
+    font-family:  'Pavanam', sans-serif;
+    font-size: 15px;
+    margin: 0.5%;
+    color: black;
+}
+                                                                                                                                                                 
+nav ul li {
+    color: rgb(17, 17, 17);
+    text-align: center;
+    margin: 17px;
+    list-style: none;
+    font-size: 24px;
+    line-height: 0;
+    float: left;
+    margin-bottom: 3%;
+    font-family: 'Pavanam', sans-serif;
+}
+                                                                                                                                                                        
+ol li {
+    color: rgb(17, 17, 17);
+    margin: 20px;
+    text-align: center;
+    list-style-type: upper-roman;
+}
+
+.noticias {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 90vw;
+    margin-bottom: 70px;
+}
+
+.noticias p {
+    margin: 20px;
+    text-decoration:none;
+}
+
+/*ID Menú desplegable con CAMELCASE*/
+    
+#MenuConCamel {
+    text-decoration: none;
+    width: 94vw;
+    height: 9vw;
+    background-color:#fafafa;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+}
+
+#MenuConCamel ul {
+    list-style: none;
+    font-size: 0;
+    background-color:#fafafa;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 7px;
+}
+  
+#MenuConCamel li>a {
+    color: black;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px; 
+}
+
+#MenuConCamel li {
+    font-size: 15px;
+}
+  
+#MenuConCamel li>a:hover {
+    color: black;
+    background-color: #f8e9e9;
+}
+
+#MenuConCamel ul ul {
+    position: relative;
+    display: none;
+}
+
+ #MenuConCamel ul li:hover ul {
+    display:block;
+}
+ 
+.investigacion {
+    background-color: rgb(250, 240, 246);
+    color: black;
+    font-size: 1.2em;
+    justify-content: center;
+    font-family: 'Pavanam', sans-serif;
+    justify-content: center;
+    margin: 1%;
+    margin-left: 30px;
+}  
+
+.suscribete {
+    display: flex;
+    justify-content: center;
+    background-color:rgb(252, 241, 227);
+    font-family: 'Pavanam', sans-serif;
+    font-size: 17px;
+    text-decoration: underline;
+    line-height: 2;
+}
+                     
+.recomendaciones {
+    font-size: 17px;
+    background-image:url(https://image.freepik.com/foto-gratis/piso-madera-clara_53876-92981.jpg);
+    text-align: center;
+    line-height: 3;
+    width: 70rem;
+}    
+
+.comunidad {
+    font-size: 19px;
+    background-image:url(https://image.freepik.com/foto-gratis/piso-madera-clara_53876-92981.jpg);
+    text-align:center;
+    line-height: 3; 
+    width: 73rem;
+}
+
+.sociedad {
+    font-size: 20px;
+    width: 70rem;
+    height: 120px;
+    line-height: 2;
+    background-image: linear-gradient(90deg, rgb(245, 233, 185) 0%, rgb(248, 209, 209) 49%, rgb(248, 224, 191) 100%);  
+}
+
+.sociedad p {
+    font-family: 'Pavanam', sans-serif;
+    font-size: medium;
+}
+
+.formulario {
+    font-size: medium;
+    background-image: url(https://image.freepik.com/foto-gratis/fondo-producto-beige_53876-89504.https://image.freepik.com/foto-gratis/fondo-papel-tapiz-vintage_53876-31379.jpg);
+    width: 70rem;
+    height: 20rem;
+    line-height: 2;
+}
+
+.nosotros {
+    font-size:medium;
+    line-height: 250%;
+    background-color: blanchedalmond;
+    line-height: 4;
+}
+
+/*Probando CamelCase*/
+
+.FormularioDeRegistro {
+    line-height: 1.7;
+    justify-content: center;
+}
+
+/*Probando estilo a la lista*/
+
+.ImgRedonda {
+    border-radius: 150px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    width: 53rem;
+}
+
+.section img {
+    margin: 1px;
+}
+
+.section__margen {
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1011px) {
+    .section {
+        display: block;
+        margin-right: 50rem;
+    }
+}
+
+/* flex padre*/
+
+.flexContainer {
+    height: 250px;
+    background-color: rgb(248, 226, 238);
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:baseline;
+    flex-flow: row wrap;
+}
+
+/* flex hijo*/
+
+.flexContainer div {
+    height: 60px;
+    width: 170px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+/*grilla*/
+
+.banner {
+    background-color: beige;
+    width: 80vw;
+    height: 60vh;
+    margin-bottom: 70px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 60% 20%;
+    grid-template-areas: 
+    "img nosotrosTexto"
+    "img parrafo1"
+    "img parrafo2"
+    "img parrafo3"
+    "img parrafo4";
+    gap: auto;
+}
+
+.bannerImg {
+    background-image: url(https://empresas.infoempleo.com/hrtrends/media/2019/04/HRTRENDS-RECLUTAMIENTO-COMO_UNIR_UN_EQUIPO_DE_TRABAJO.jpg);
+    grid-area: img;
+    background-position: center;
+    background-size: cover;
+}
+
+.nosotrosTexto {
+    grid-area: nosotrosTexto;
+    text-align: center;
+    padding: 15px;
+    font-size: medium;
+}
+
+.parrafo1 {
+    grid-area: parrafo1;
+}
+
+.parrafo2 {
+    grid-area: parrafo2;
+}
+.parrafo3 {
+    grid-area: parrafo3;
+}
+.parrafo4 {
+    grid-area: parrafo4;
+}
+
+@media screen and (max-width:767px) {
+    .banner {
+        margin-top: 5rem;
+    }
+
+    .lola {
+        flex-direction: column;
+    }
+
+    .main__categorias {
+        flex-direction: column;
+    }
+
+    .img__categorias {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .noticias {
+        display: grid;
+        grid-template-columns: 75%;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        padding: 20px;
+        background-color: #f8e9e9;
+    }
+
+    .nav__GaleriaImg {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width:1095px) {
+    .noticias {
+        display: grid;
+        grid-template-columns: 75%;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        padding: 20px;
+        background-color: #f8e9e9;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .banner {
+        background-color: rgb(245, 220, 242);
+        width: 100vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-areas: 
+        "img nosotrosTexto"
+        "img parrafo1"
+        "img parrafo2"
+        "img parrafo3"
+        "img parrafo4";
+    }
+}
+
+/* grid en tabla */
+
+.banner3 {
+    background-color: #CA9ACD;
+    width: 50vw;
+    height: 40vh;
+    margin-bottom: 50px;
+    display: grid;
+    text-align: center;
+    grid-auto-rows: auto;
+    grid-template-columns: 35% 69%;
+    grid-template-areas: 
+    "parrafo13 img";
+}
+
+.parrafo13 {
+    grid-area: parrafo13;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 100px;
+    color: white;
+}
+
+.banner {
+    background-color: beige;
+    width: 80vw;
+    height: 60vh;
+    margin-bottom: 70px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 77.5% 25%;
+    grid-template-areas: 
+    "img nosotrosTexto"
+    "img parrafo1"
+    "img parrafo2"
+    "img parrafo3"
+    "img parrafo4";
+}
+
+.bannerImg {
+    background-image: url(https://empresas.infoempleo.com/hrtrends/media/2019/04/HRTRENDS-RECLUTAMIENTO-COMO_UNIR_UN_EQUIPO_DE_TRABAJO.jpg);
+    grid-area: img;
+    background-position: center;
+    background-size: cover;
+}
+
+.nosotrosTexto {
+    grid-area: nosotrosTexto;
+    text-align: center;
+    padding: 20px;
+    font-size: medium;
+}
+
+.parrafo1 {
+    grid-area: parrafo1;
+}
+
+.parrafo2 {
+    grid-area: parrafo2;
+}
+
+.parrafo3 {
+    grid-area: parrafo3;
+}
+
+.parrafo4 {
+    grid-area: parrafo4;
+}
+
+/*Media QUERIES*/
+
+@media screen and (min-width: 768px) {
+    .header__navegacion {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0;
+        position: relative;
+        transform: translateX(0);
+        transition: transform 0s;
+        align-items: center;
+        margin-top: 10px;
+    }
+        
+    .header__navegacion ul {
+        width: 94vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        list-style: none;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    .header__navegacion ul li {
+        margin: 0;
+    }
+
+    .header__navegacion {
+        text-decoration: none;
+        width: 94vw;
+        background-color:#fafafa;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        position: relative;
+    }
+    
+    .header__navegacion ul {
+        list-style: none;
+        font-size: 0;
+        background-color:#fafafa;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 7px;
+    }
+      
+    .header__navegacion li>a {
+        color: black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        min-width: 100px; 
+    }
+    
+    .header__navegacion li {
+        font-size: 15px;
+    }
+   
+    .header__navegacion li>a:hover {
+        color: black;
+        background-color: #f8e9e9;
+    }
+    
+    .header__navegacion ul ul {
+        position: relative;
+        display: none;
+    }
+    
+    .header__navegacion ul li:hover ul {
+        display:block;
+    }
+}
+
+/*Diseños para Entrega con lo aprendido hasta ahora.*/
+
+.carousel-inner {
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.banner2 {
+    background-color: beige;
+    width: 60rem;
+    margin-bottom: 70px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "nosotrosTexto img"
+    "parrafo1 img"
+    "parrafo2 img"
+    "parrafo3 img"
+    "parrafo4 img";
+}
+
+.bannerImg2 {
+    background-image: url(https://image.freepik.com/foto-gratis/grupo-personas-trabajando-plan-negocios-oficina_1303-15773.jpg);
+    grid-area: img;
+    background-position: center;
+    background-size: cover;
+    width: 34rem;
+}
+
+.nosotrosTexto2 {
+    grid-area: nosotrosTexto;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.parrafo11 {
+    grid-area: parrafo1;
+}
+
+.parrafo22 {
+    grid-area: parrafo2;
+    font-weight: bold;
+}
+.parrafo33 {
+    grid-area: parrafo3;
+    color: brown;
+    font-weight: bold;
+}
+.parrafo44 {
+    grid-area: parrafo4;
+}
+
+.destacados {  
+    text-align:center;
+    padding:8px;
+    font-size: 25px;
+    color: #be4d99;
+}
+
+.destacados1 {  
+    text-align:center;
+    padding:8px;
+    font-size: 25px;
+    color: #94a2f1;
+}
+
+.destacados2 {  
+    text-align:center;
+    padding:8px;
+    font-size: 25px;
+    color: #93a574;
+}
+.destacados3 {  
+    text-align:center;
+    padding:8px;
+    font-size: 25px;
+    color: #e41c1c;
+}
+
+.blog-meta small:after {
+    content: "/";
+    padding-left: 1rem;
+    text-decoration: none;
+}
+
+.h7__tittle {
+    color: #be4d99;
+    font-size: medium;
+    width: auto;
+    font-weight: bold;
+}
+
+.corto {
+    height: max-content;
+    text-align: center;
+    margin-bottom: 2%;
+    text-align: center;
+    border-color: #be4d99;
+    border-top: solid 1px #be4d99;
+    border-left: solid 1px #be4d99;
+    border-color: #be4d99;
+    border-right: solid 1px #be4d99;
+    border-bottom: solid 1px #be4d99;
+    padding: 10px;
+    margin: 10px;
+    width: 29rem;
+}
+
+.corto p {
+    text-align: justify;
+    margin: 5px;
+}
+
+.lola {
+    display: flex;
+    justify-content: center;
+}
+
+.destacados1 {  
+    text-align:center;
+    padding:8px;
+    font-size: 25px;
+    color: #94a2f1;
+}
+
+.destacados2 {  
+    text-align:center;
+    padding:8px;
+    font-size: 25px;
+    color: #93a574;
+}
+
+.destacados3 {  
+    text-align:center;
+    padding:8px;
+    font-size: 25px;
+    color: #e41c1c;
+}
+
+.pobreza {
+    font-size: 25px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.line2 {
+    height: 1px;
+	width: 90%;
+	display: block;
+	background: url(../images/border1.png);
+	position: relative;
+	bottom: 16px;
+    border: hotpink;
+    margin-left: 50px;
+}
+
+.nombres {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.m_4 {
+	text-align: center;
+	position: relative;
+    margin-top: 25px;
+}
+
+.m_42 {
+	text-align: center;
+	position: relative;
+    margin-top: 50px;
+}
+
+.equipo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.trabajo {
+    width: 220px;
+}
+
+.boxing {
+    font-size: 25px;
+    margin-top: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+}
+
+.numeros {
+    color: #be4d99;
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+    border-color: black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+} 
+
+.basico {
+    font-size: 30px;
+    color: #141313;
+    font-weight: bold;
+}
+
+.list-group-item {
+    font-size: 20px;
+    color: #141313;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    height: 27px;
+
+    .list-group-item:hover {
+        color: #be4d99;
+    }
+}
+
+.list-group2 {
+    height: auto;
+    width: 500px;
+    margin-left: 26rem;
+}
+
+.list-group-item2 {
+    height: 45px;
+    width: 370px;
+    padding: 10px;
+    line-height: 0.1;
+}
+
+.list-group-item {
+    height: auto;
+    width: 300px;
+}
+
+.m_7 {
+	text-align: center;
+	position: relative;
+    margin-top: 20px;
+}
+
+.m_13 {
+	text-align: center;
+	position: relative;
+    margin-top: 3rem;
+}
+
+.whitt {
+    color: white;
+    font-size: medium;
+}
+
+.estiloRec {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.viajes {
+    text-decoration:underline;
+}
+
+/*Correcciones  Bootstrap*/
+
+@media screen and (min-width: 768px) {
+    .close {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    .active {
+        display: none;
+    }
+
+    .aa {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+    .boxing {
+            font-size: 25px;
+            margin-top: 7rem;
+            font-weight: bold;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1200px) {
+    .boxing {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .flexContainer {
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .close {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    .active {
+        display: none;
+    }
+   
+    .banner2 {
+        background-color: beige;
+        width: 34rem;
+        margin-bottom: 70px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "nosotrosTexto img"
+        "parrafo1 img"
+        "parrafo2 img"
+        "parrafo3 img"
+        "parrafo4 img";
+    }
+
+    .bannerImg2 {
+        background-image: url(https://image.freepik.com/foto-gratis/grupo-personas-trabajando-plan-negocios-oficina_1303-15773.jpg);
+        grid-area: img;
+        background-position: center;
+        background-size: cover;
+        width: 25rem;
+    }
+
+    .banner3 {
+        width: 40rem;
+        height: 20rem;
+    }
+
+    .bannerImg3 {
+        width: 35rem;
+        height: 20rem;
+    }
+
+    .parrafo13 {
+        grid-area: parrafo13;
+        font-size: 20px;
+    }
+
+    .div__sociedad {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        width: 40rem;
+    
+        .div__pobreza {
+            height: 3rem;
+        }
+    
+        .div__HambreCero {
+            width: 400px;
+            height: 500px;
+            background-color:  rgb(207, 189, 155);
+            margin-bottom: 30px;
+        }
+    
+        .div__SaludyBienestar {
+            width: 400px;
+            height: 500px;
+            background-color: rgb(120, 155, 120);
+            margin-bottom: 30px;
+        }
+
+        .div__Educacion {
+            width: 400px;
+            height: 500px;
+            background-color: rgb(163, 105, 105);
+            margin-bottom: 30px;
+        }
+
+        .div__parrafo {
+            margin: 10px;
+            font-size: small;
+        }
+    }
+
+    .div__noticias {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 20px;
+    }
+
+    .h3__Salta {
+        @extend .div__noticias;
+        color: brown;
+        font-weight: bold;
+    }
+
+    .h3__neuquen {
+        @extend .div__noticias;
+        color: #35449c;
+        font-weight: bold;
+        margin-top: 3rem;
+    }
+
+    .h3__chaco {
+        @extend .div__noticias;
+        color: #580c3f;
+        font-weight: bold;
+        margin-top: 3rem;
+    }
+
+    .p__enlace {
+        @extend .div__noticias;
+        margin-right: 20px;
+        text-decoration: none;
+        font-size: medium;
+        background-color: #eed3e5;
+        margin-bottom: 30px;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:1090px) {
+        
+   .equipoImg {
+       height: 250px;
+   }
+
+   .trabajo {
+       margin-bottom: 1px;
+   } 
+   
+   .flexContainer {
+    height: auto;
+    background-color: rgb(248, 226, 238);
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:baseline;
+    flex-flow: row wrap;
+    }
+
+    .boxing {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+img {
+    max-width: 100%; 
+}
+
+:root {
+    --main-white-color: white;
+    --main-black-color: black;
+  }
+   
+  .static {
+    position: static; 
+  }
+   
+  .cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .owl-carousel .owl-slide {
+    position: relative;
+    height: 100vh;
+    background-color: lightgray;
+  }
+   
+  .owl-carousel .owl-slide-animated {
+    transform: translateX(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.05s;
+  }
+   
+  .owl-carousel .owl-slide-animated.is-transitioned {
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+  }
+   
+  .owl-carousel .owl-slide-title.is-transitioned {
+    transition-delay: 0.2s;
+  }
+   
+  .owl-carousel .owl-slide-subtitle.is-transitioned {
+    transition-delay: 0.35s;
+  }
+   
+  .owl-carousel .owl-slide-cta.is-transitioned {
+    transition-delay: 0.5s;
+  }
+
+  .owl-carousel .owl-dots,
+  .owl-carousel .owl-nav {
+  position: absolute;
+}
+ 
+  .owl-carousel .owl-dots .owl-dot span {
+  background: transparent;
+  border: 1px solid var(--main-black-color);
+  transition: all 0.2s ease;
+}
+ 
+  .owl-carousel .owl-dots .owl-dot:hover span,
+  .owl-carousel .owl-dots .owl-dot.active span {
+  background: var(--main-black-color);
+}
+ 
+  .owl-carousel .owl-nav {
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+/* Menú final */
+
+#mainav {
+    width:auto;
+}
+
+#mainav, #breadcrumb, .sidebar nav {
+    line-height:normal;
+}
+
+#mainav ul {
+    text-align:center;
+}
+
+#mainav ul ul {
+    z-index:9999; 
+    position:absolute; 
+    width:160px; 
+    text-transform:none; 
+    text-align:left;
+}
+
+#mainav li li {
+    width:100%; 
+    margin:0;
+}
+
+#mainav .active a, #mainav a:hover, #mainav li:hover > a {
+    color:#000000; 
+    background-color:inherit;
+}
+
+#mainav li li a, #mainav .active li a {
+    color:#000000; 
+    background-color:#e4d7d7;
+}
+
+#mainav li li:hover > a, #mainav .active .active > a {
+    color:#ad8a62;
+}
+
+/*from*/
+
+@for $i from 1 through 6 {
+    h#{$i} {
+    font-size: $i * 5px;
+    margin-left: 20px;
+    color: #be7ba8;
+    }
+}
+
+/*Responsive correcciones*/
+
+@media screen and (max-width: 767px) {
+    .body {
+        padding: 2px;
+        width: 39rem;
+        justify-content: center;
+    }
+
+    .header__home {
+        margin-right: 20rem;
+    }
+
+    .header__buscador {
+        display: none;
+    }
+
+    .recomendaciones {
+        width: 20rem;
+        justify-content: center;
+        margin: 2;
+    }
+
+    .columnitas {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #mainav, #breadcrumb, .sidebar nav {
+        line-height:normal;
+        text-decoration: none;
+        text-transform: none;
+        height: 30px;
+    }
+    
+    #mainav ul {
+        text-align:center;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
+    
+    #mainav ul ul {
+        text-transform:none; 
+        text-decoration: none;
+        overflow: hidden;
+        display: none;
+    }
+    
+    .nav__GaleriaImg {
+        min-width: 10rem;
+    }
+
+    .section {
+        display: block;
+        overflow-x: hidden;
+    }
+
+    .section__noticias {
+        margin-bottom: 5rem;
+    }
+
+    .header__navegacion {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0;
+        position: relative;
+        transform: translateX(0);
+        transition: transform 0s;
+        align-items: center;
+        margin-top: 10px;
+    }
+        
+    .header__navegacion ul {
+        width: 94vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        list-style: none;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    .header__navegacion ul li {
+        margin: 1;
+    }
+
+    .header__navegacion {
+        text-decoration: none;
+        width: 94vw;
+        height: 9vw;
+        background-color:#fafafa;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        margin-top: 10px;
+        position: relative;
+    }
+    
+    .header__navegacion ul {
+        list-style: none;
+        font-size: 0;
+        background-color:#fafafa;
+        padding: 2px;
+    }
+      
+    .header__navegacion li>a {
+        color: black;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;  
+    }
+    
+    .header__navegacion li {
+        font-size: 15px;
+    }
+      
+    .header__navegacion li>a:hover {
+        color: black;
+        background-color: #f8e9e9;
+    }
+    
+    .header__navegacion ul ul {
+        position: relative;
+        display: none;
+    }
+    
+    .header__navegacion ul li:hover ul {
+        display:block;
+    }
+}
+
+/*Pag responsive 2*/
+
+@media screen and (max-width: 1010px) {
+    .body {
+        padding: 2px;
+        width: 39rem;
+        justify-content: center;
+    }
+
+    .header__home {
+        margin-right: 20rem;
+    }
+
+    .header__buscador {
+        display: none;
+    }
+
+    .header__logo {
+        margin-bottom: 5rem;
+    }
+
+    .todoEste {
+        margin-top: 3rem;
+        padding: 1rem;
+        background-color: #fafafa;
+        font-size: small;
+        width: auto;
+    }
+
+    .aside__servicios {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: center; 
+        margin-left: 10rem;
+    
+        
+        .div__servicios {
+            width: 300px;
+            border-top: solid 1px black;
+            border-left: solid 1px black;
+            border-color: black;
+            border-right: solid 1px black;
+            border-bottom: solid 1px black;
+            padding: 10px;
+            margin: 10px;
+            border-radius:150px;
+        }
+    
+        .div__zoom {
+            transition: transform .2s; 
+        }
+            
+        .div__zoom:hover {
+            transform: scale(1.1); 
+        }
+
+        .investigacion {
+            background-color: rgb(250, 240, 246);
+            color: black;
+            font-size: 1.2em;
+            justify-content: center;
+            font-family: 'Pavanam', sans-serif;
+            justify-content: center;
+            margin: 1%;
+            width: 30rem;
+            margin-left: 30px;
+        }  
+    
+        .p__servicios {
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        .section__investigacion {
+            width: 30rem;
+        }
+
+        .div__transiciones {
+            width: 30rem;
+            font-size: small;
+        }
+    }
+      
+    .header__navegacion li>a {
+        color: black;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
+    
+    .header__navegacion li {
+        font-size: 15px;
+    }
+      
+    .header__navegacion li>a:hover {
+        color: black;
+        background-color: #f8e9e9;
+    }
+    
+    .header__navegacion ul ul {
+        position: relative;
+        display: none;
+    }
+    
+    .header__navegacion ul li:hover ul {
+        display:block;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .carousel-inner {
+        height: auto;
+        margin-bottom: 10px;
+        margin-top: 100px;
+    }
+
+    .titulo {
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .formulario {
+            font-size: medium;
+            background-image: url(https://image.freepik.com/foto-gratis/fondo-producto-beige_53876-89504.https://image.freepik.com/foto-gratis/fondo-papel-tapiz-vintage_53876-31379.jpg);
+            width: 35rem;
+            height: 20rem;
+            line-height: 2;
+    }
+
+    .sociedad {
+        font-size: 20px;
+        width: 35rem;
+        height: 170px;
+        line-height: 2;
+        background-image: linear-gradient(90deg, rgb(245, 233, 185) 0%, rgb(248, 209, 209) 49%, rgb(248, 224, 191) 100%);  
+    }
+
+    .sociedad p {
+        font-family: 'Pavanam', sans-serif;
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width: 1011px) {
+    .banner3 {
+        width: 40rem;
+        height: 20rem;
+    }
+
+    .bannerImg3{
+        width: 35rem;
+        height: 20rem;
+    } 
+}
+
+@media screen and (max-width: 1010px) {
+    .banner3 {
+        width: 40rem;
+        height: auto;
+    }
+
+    .bannerImg3{
+        width: auto;
+        height: 20rem;
+    } 
+}
+
+@media screen and (max-width:770px) {
+    .banner3 {
+        background-color: #be4d99;
+        width: 100vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-areas: 
+        "parrafo13 img";
+    }
+    
+    .parrafo13 {
+        grid-area: parrafo13;
+        justify-content: center;
+        font-size: 15px;
+        margin-top: 5px;
+        color: white;
+    }
+
+    .bannerImg3 {
+        background-image: cover;
+        height: 9rem;
+    }
+
+    .div__sociedad {
+        display: flex;
+        flex-direction: column;
+        display: inline;
+    }
+
+    .sociedad {
+        width: 20rem;
+        height: 17rem;
+        margin-bottom: 20px;
+    }
+
+    .formulario {
+        width: 20rem;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .comunidad {
+        font-size: 19px;
+        background-image:url(https://image.freepik.com/foto-gratis/piso-madera-clara_53876-92981.jpg);
+        text-align:center;
+        line-height: 3; 
+        width: 37rem;
+    }
+}
+
+@media screen and (min-width: 388px) and (max-width: 576px) {
+    .flexContainer {
+        height: 40rem;
+        margin-bottom: 5rem;
+    }
+
+    .section__article {
+        margin-left: 3rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .comunidad {
+        font-size: 19px;
+        background-image:url(https://image.freepik.com/foto-gratis/piso-madera-clara_53876-92981.jpg);
+        text-align:center;
+        line-height: 2; 
+        width: 20rem;
+    }
+
+    .lola {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .corto {
+        width: 22rem;
+    }
+
+    .equipo {
+        width: 20rem;
+        margin-left: 2rem;
+    }
+
+    .equipoImg {
+        height: 8rem;
+    }
+
+    .boxing {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-group-item2 {
+        height: 45px;
+        width: 250px;
+        line-height: 1;
+    }
+
+   .investigacion {
+        width: 20rem;
+   }
+
+   .aside__servicios {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    justify-content: center; 
+    margin-left: 1rem;
+    }
+
+    .section__investigacion {
+        width: 28rem;
+        margin-left: -3rem;
+    }
+}
+
+@media screen and (max-width: 457px) {
+    .section__article {
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .banner2 {
+        display: flex;
+        flex-direction: column;
+        width: 19rem;
+    }
+
+    .m_4 {
+        margin-top: 2rem;
+    }
+
+    .contenedor {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .close {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    .active {
+        display: none;
+    }
+
+    .aa {
+        margin-bottom: 20px;
+    }
+    
+    .father {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.father {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; 
+}
+
+.hijo {
+    width: min-content; 
+}
+
+@media screen and (max-width: 768px) {
+    .body {
+        padding: 0;
+    } 
+
+    .contenedor {
+        padding: 0;
+    }
+
+    .index__video {
+        display: none;
+    }
+    
+    .div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 8rem;
+    }
+
+    .m_7 {
+        margin-left: -2rem;
+        width: auto;
+    }
+
+    .img {
+        margin-top: 2rem;
+        width: 23rem;
+    }
+
+    .div2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 8rem;
+    }
+
+    .p {
+        display: none;
+    }
+
+    .div3 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 8rem;
+    }
+
+    .father {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .div__tittles {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1010px) {
+    .recomendaciones {
+        width: 35rem;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .div {
+        background-color: #fafafa;
+        color: black;
+        display: grid;
+        text-align: center;
+        font-family: 'Hind', sans-serif;
+        justify-content: center;
+        grid-template-columns: 25% 30% 25%;
+        grid-template-areas: 
+        "img titulito video"
+        "img p1 video"
+        "img aa video"
+        ;
+    }
+
+    .img {
+        grid-area: img;
+        background-size: cover;
+    }
+
+    .titulo {
+        grid-area: titulito;
+        text-align: center;
+        font-size: medium;
+        position: relative;
+        justify-content: center;
+        font-family:  'Pavanam', sans-serif;
+        background-color: #f8e9e9;
+        font-family:  'Pavanam', sans-serif;
+    }
+
+    .video {
+        grid-area: video;
+    }
+
+    .div2 {
+        background-color: #fafafa;
+        color: black;
+        display: grid;
+        font-family: 'Hind', sans-serif;
+        justify-content: center;
+        grid-template-columns: 25% 30% 25%;
+        grid-template-areas: 
+        "img titulito video"
+        "img p1 video"
+        "img aa video"
+        ;
+    }
+
+    .video2 {
+        grid-area: video;
+    }
+
+    .p {
+        grid-area: p;
+        text-align: justify;
+        line-height: 1.7;
+        font-size: 15px;
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+
+    .div3 {
+        background-color: #fafafa;
+        color: black;
+        display: grid;
+        font-family: 'Hind', sans-serif;
+        justify-content: center;
+        grid-template-columns: 25% 30% 25%;
+        grid-template-areas: 
+        "img titulito video"
+        "img p1 video"
+        "img aa video"
+        ;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .section__tabla {
+        display: grid;
+        font-family: serif;
+        grid-template-columns: 10% 10% 10% 10%;
+        grid-template-areas: 
+        "img img img img"
+        "Ciudad	Fecha Temperatura Total"
+        "Salta marzo grados Ranking"
+        "Buenos Aires marzo grados Ranking"
+        "Córdoba marzo grados Ranking"
+        ;
+        
+        .div__Ciudad {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__Fecha {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__Temperatura {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__Total {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__Salta {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__Buenos {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__marzo {
+            font-size: medium;
+            padding: 10px;
+        }
+        
+        .div__marzo2 {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__marzo3 {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__Cordoba {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__grados2 {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__grados1 {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__grados {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__Ranking {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__Ranking2 {
+            font-size: medium;
+            padding: 10px;
+        }
+
+        .div__Ranking3 {
+            font-size: medium;
+            padding: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .section__tabla {
+        display: grid;
+        font-family: serif;
+        grid-template-columns: 20% 26% 35% 33%;
+        grid-template-areas: 
+        "img img img img"
+        "Ciudad	Fecha Temperatura Total"
+        "Salta marzo grados Ranking"
+        "Buenos Aires marzo grados Ranking"
+        "Córdoba marzo grados Ranking"
+        ;
+        
+        .div__Ciudad {
+            font-size: 12px;
+            justify-content: left;
+            padding: 20px;
+            margin-left: -1rem;
+        }
+    
+        .div__Fecha {
+            font-size: 12px;
+            padding: 20px;
+            margin-left: -1rem;
+        }
+    
+        .div__Temperatura {
+            font-size: 12px;
+            padding: 20px;
+            margin-left: -1rem;
+        }
+    
+        .div__Total {
+            font-size: 12px;
+            padding: 20px;
+            margin-left: -1rem;
+        }
+    
+        .div__Salta {
+            font-size: 12px;
+            padding: 20px;
+        }
+    
+        .div__Buenos {
+            font-size: 12px;
+            padding: 20px;
+        }
+    
+        .div__marzo {
+            font-size: 12px;
+            padding: 20px;
+        }
+        
+        .div__marzo2 {
+            font-size: 12px;
+            padding: 20px;
+        }
+    
+        .div__marzo3 {
+            font-size: 12px;
+            padding: 20px;
+        }
+    
+        .div__Cordoba {
+            font-size: 12px;
+            padding: 20px;
+            margin-left: -1rem;
+        }
+    
+        .div__grados2 {
+            font-size: 12px;
+            padding: 20px;
+        }
+    
+        .div__grados1 {
+            font-size: 12px;
+            padding: 20px;
+        }
+    
+        .div__grados {
+            font-size: 12px;
+            padding: 20px;
+        }
+    
+        .div__Ranking {
+            font-size: 12px;
+            padding: 20px;
+        }
+    
+        .div__Ranking2 {
+            font-size: 12px;
+            padding: 20px;
+        }
+    
+        .div__Ranking3 {
+            font-size: 12px;
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1010px) {
+    .banner3 {
+        margin-left: 9rem;
+    }
+
+    .sociedad {
+        margin-bottom: 2rem;
+        height: 11rem;
+    }
+
+    .m_3 {
+        margin-left: 1rem;
+        width: 60rem;
+    }
+    
+    .div__sociedad {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+        width: 70rem;
+    }
+
+    .div__noticias {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 20px;
+        width: 30rem;
+        margin-left: 15rem;
+    }
+
+    .h3__Salta {
+        margin-left: 1rem;
+    }
+
+    .h3__chaco {
+        margin-left: 1rem;
+    }
+
+    .h3__neuquen {
+        margin-left: 1rem;
+    }
+
+    .p__enlace {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1010px) {
+    .contenedor {
+        margin-right: 10rem;
+    }
+
+    .index__video {
+        display: none;
+    }
+    
+    .div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img {
+        width: 30rem;
+        height: auto;
+        align-items: center;
+        margin-top: 0%;
+        margin-left: 10rem;
+    }
+
+    .titulo {
+        font-size: larger;
+        margin-left: 12rem;
+        font-weight: bold;
+        width: 30rem;
+    }
+
+    .acortar {
+        margin: auto;
+    }
+
+    .div2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .div__tittles {
+        display: none;
+    }
+
+    .aa {
+        margin-left: 13rem;
+    }
+
+    .h__enlace {
+        margin-bottom: 2rem;
+    }
+
+    .p {
+        font-size: medium;
+        margin-left: 13rem;
+        width: 29rem;
+    }
+
+    .div3 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .contenedor {
+        width: 100%;
+        margin-left: 3rem;
+    }
+
+    .p {
+        width: 32rem;
+    }
+}
+
+@media screen and (min-width: 771px) and (max-width: 991px) {
+    .banner3 {
+        width: 35rem;
+        margin-left: 7.8rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .formulario {
+        font-size: medium;
+        background-image: url(https://image.freepik.com/foto-gratis/fondo-producto-beige_53876-89504.https://image.freepik.com/foto-gratis/fondo-papel-tapiz-vintage_53876-31379.jpg);
+        width: 35rem;
+        height: 27rem;
+        line-height: 2;
+        margin-top: 2rem;
+    }
+
+    .contendor-formulario {
+        margin: auto;
+        width: auto;
+    }
+
+    .sociedad {
+        width: 35rem;
+        height: 10rem;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 770px) {
+    .banner3 {
+        margin-top: 5rem;
+    }
+
+    .bannerImg3 {
+        width: 31rem;
+        height: 14rem;
+        margin-left: 1rem;
+    }
+
+    .banner {
+        font-size: 10px;
+        width: 35rem;
+        height: 25rem;
+        margin-left: 1rem;
+    }
+
+    .div__sociedad {
+        margin-left: 5rem;
+    }
+
+    .parrafo13 {
+        margin-top: 2rem;
+    }
+
+    .m_7 {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .banner3 {
+        margin-top: 5rem;
+        width: 19rem;
+        height: 9rem;
+    }
+
+    .parrafo13 {
+        font-size: small;
+    }
+
+    .bannerImg3 {
+        margin-left: 1rem;
+    }
+
+    .div__sociedad {
+        margin-left: 2rem;
+        width: auto;
+    }
+
+    .sociedad {
+        width: 18rem;
+        height: 15rem;
+    }
+
+    .formulario {
+        width: 20rem;
+        height: 35rem;
+    }
+
+    .contendor-formulario {
+        width: 18rem;
+    }
+
+    .father {
+        margin-left: -4rem;
+    }
+
+    .carousel-inner {
+        img {
+            height: auto;
+        }
+    }
+
+    .main__columnas {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .section {
+        margin-left: -15rem;
+        display: inline;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .banner {
+        width: 20rem;
+        height: 40vh;
+        background-color: #fafafa;
+    
+        .bannerImg {
+            width: 20rem;
+        }
+
+        .nosotrosTexto {
+        display: none;
+        }
+        
+        .parrafo1 {
+            display: none;
+        }
+
+        .parrafo2 {
+            display: none;
+        }
+
+        .parrafo3 {
+            display: none;
+        }
+
+        .parrafo4 {
+            display: none;
+        }
+    }
+
+    .header__comentario {
+        width: 30rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #mainav {
+        margin-bottom: 4rem;
+    }    
+}
+
+@media screen and (min-width: 1399px) {
+    .father {
+        max-width: 1223px
+    }
+
+    .img {
+        width: 100%
+    }
+}
+
+@import "_error404.scss";
+@import "_operaciones.scss";
+@import "_bem.scss";
+@import "_extends.scss";
+@import "_mixins.scss";
+@import "_transformaciones.scss";
+@import "_bucles.scss";
+@import "_animacionesytransiciones.scss";
+@import "_modal.scss";
+

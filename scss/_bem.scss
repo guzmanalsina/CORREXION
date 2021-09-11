@@ -1,0 +1,451 @@
+/*METODOLOGÍA BEM Y COMPILADO EN SCSS*/
+
+/*Bloque 1*/
+
+.header {
+    background-color: #fafafa;
+
+    .header__comentario {
+        background-color:rgb(233, 232, 232);
+        font-size: small;
+        margin-bottom: 20px;
+    }
+
+    .header__enlace {
+        text-decoration: none;
+    }
+
+    .header__navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        background-color: #fafafa;
+        font-size: medium;
+    }
+    
+    .header__logo {
+        text-align: center;
+        line-height: 1.7;
+        font-family: 'Pavanam', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 86px;
+        height: 86px;
+        background: #be4d99;
+        border-radius: 1000px;
+        font-size: 20px;
+        color: rgb(238, 225, 107);
+    }
+
+    .header__home {
+        text-align:center;
+        display: flex;
+        margin-right: 1000px;
+        position:absolute;
+    }
+
+    .header__buscador{
+        margin-left: 50rem;
+        position: absolute;
+        height: auto;
+    }
+} 
+
+/*Bloque 2*/
+
+.footer {
+
+    width: auto;
+
+    .footer__thanks {
+        margin-top: 100px;
+        background-color:rgb(233, 232, 232);
+        margin-bottom: 10px;
+        font-size: small;
+        width: auto;
+    }
+
+    .footer__navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        background-color: #fafafa;
+        font-size: medium;
+    }
+    
+    .footer__logo {
+        text-align: center;
+        line-height: 1.7;
+        font-family: 'Pavanam', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 86px;
+        height: 86px;
+        background: #be4d99;
+        border-radius: 1000px;
+        font-size: 20px;
+        color: rgb(238, 225, 107);
+    }
+
+    .footer__SeguinosEnLasRedes {
+        margin: 2%;
+        font-size: larger; 
+    }
+
+    .footer__form {
+        width: 300px;
+    }
+
+    .footer__copyright {
+        margin-top: 20px;
+    }
+}
+
+/*Bloque 4*/ 
+
+.main__recomendaciones {
+    display: flex;
+    justify-content: center;
+
+    .main__columnas {
+        background-image: url(https://images.unsplash.com/photo-1572989994359-ae5afc3a3efe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+        background-size: cover;
+        padding: 3px;
+        margin: 3px;
+        width: 20%;
+        height: 70vh;
+        color: white;
+        text-align: center;
+        font-size: auto;
+        background-blend-mode: soft-light;
+        background-color: rgb(70, 70, 70);
+        justify-content: center;
+    }
+    .main__img {
+        background-image: url(https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+    }
+
+    .main__img2 {
+        background-image: url(https://images.unsplash.com/photo-1599148401005-fe6d7497cb5e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80);
+    }
+}
+
+/*Bloque 5*/ 
+
+.div__sociedad {
+    display: flex;
+    justify-content: center;
+
+    .div__pobreza {
+        width: 300px;
+        height: 500px;
+        background-color: rgb(221, 177, 177);
+        margin-bottom: 30px;
+    }
+    .div__tittle {
+        background-color: rgb(233, 10, 10);
+        color: white;
+    }
+    
+    .div__parrafo {
+        margin: 10px;
+    }
+    
+    .div__enlace {
+        text-decoration: none;
+        font-weight: bold;
+        color: #111;
+        transition: all 1s;
+
+        .div__enlace {
+            text-decoration: none;
+            color: #580c3f;
+        }
+    }
+
+    .div__HambreCero {
+        width: 300px;
+        height: 500px;
+        background-color:  rgb(207, 189, 155);
+        margin-bottom: 30px;
+    }
+        
+    .div__tittle2 {
+        background-color: rgb(173, 117, 12);
+        color: white;
+    }
+
+    .div__SaludyBienestar {
+        width: 300px;
+        height: 500px;
+        background-color: rgb(120, 155, 120);
+        margin-bottom: 30px;
+    }
+
+    .div__tittle3 {
+        background-color: rgb(10, 80, 10);
+        color: white;
+    }
+
+    .div__Educacion {
+        width: 300px;
+        height: 500px;
+        background-color: rgb(163, 105, 105);
+        margin-bottom: 30px;
+    }
+
+    .div__tittle4 {
+        background-color: rgb(131, 15, 15);
+        color: white;
+    }
+}
+
+/*Bloque 6*/ 
+
+.section__investigacion {
+
+    .section__article {
+        font-size: medium;
+        line-height: 2;
+        height: 23rem;
+        text-align: center;
+        text-justify: distribute;
+        margin-top: 50px;
+        background-blend-mode: soft-light;
+        background-color: rgb(70, 70, 70);
+        color: white;
+    }
+    
+    .article__SubrayadoDeTitulo {
+        text-decoration: underline;
+        color: rgb(248, 209, 209);
+        text-transform: uppercase;
+        font-size: medium;
+    }
+
+    .article__enlace {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(248, 209, 209);
+    }
+}
+
+/*Bloque 7*/ 
+
+.section__tabla {
+    display: grid;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: serif;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-areas: 
+    "img img img img"
+    "Ciudad	Fecha Temperatura Total"
+    "Salta marzo grados Ranking"
+    "Buenos Aires marzo grados Ranking"
+    "Córdoba marzo grados Ranking"
+    ;
+    
+    .div__Ciudad {
+        grid-area: Ciudad;
+        background-image: url(https://image.freepik.com/vector-gratis/silueta-horizonte-ilustracion_53876-78786.jpg);
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+        color: white;
+        padding: 30px;
+    }
+
+    .div__Fecha {
+        grid-area: Fecha;
+        background-image: url(https://image.freepik.com/foto-gratis/calendario-escritorio-plano-reloj-analogico_23-2148693376.jpg);
+        height: max-content;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        padding: 30px;
+}
+
+    .div__Temperatura {
+        grid-area: Temperatura;
+        background-image: url(https://image.freepik.com/foto-gratis/nublado-cumulo-paisaje-neblina_1232-3932.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        padding: 30px;
+    }
+
+    .div__Total {
+        grid-area: Total;
+        background-image: url(https://image.freepik.com/vector-gratis/victoria-concepto-dibujos-animados-competicion-deportiva-trofeos-copa-oro-plata-bronce_33099-1029.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white; filter:alpha(opacity=60); opacity:.6;
+        padding: 30px;
+    }
+
+    .div__Salta {
+        grid-area: Salta;
+        background-image: url(https://us.cdn.eltribuno.com/072018/1530736568324.jpg?y=-3&scaleX=1&height=435&ow=764&oh=436&width=761&scaleY=1&x=0&rotate=0&&cw=320);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        padding: 30px;
+    }
+
+    .div__Buenos {
+        grid-area: Buenos Aires;
+        background-image: url(https://turismo.buenosaires.gob.ar/sites/turismo/files/styles/img_que_hacer/public/ciudad_panoramica_guemes_1500x610_0.jpg?itok=uMgyai6v);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        padding: 30px;
+    }
+
+    .div__marzo {
+        grid-area: marzo;
+        background-color: rgb(173, 160, 143);  
+        padding: 30px;
+        color: white;
+    }
+    
+    .div__marzo2 {
+        grid-area: marzo;
+        background-color: rgb(185, 166, 142);
+        padding: 30px;
+        color: white;
+    }
+
+    .div__marzo3 {
+        grid-area: marzo;
+        background-color: rgb(223, 197, 164);
+        padding: 30px;
+        color: white;
+    }
+
+    .div__Cordoba {
+        grid-area: Córdoba;
+        background-image: url(https://www.guiasdeviaje.travel/wp-content/uploads/2020/03/Catedral-Plaza-San-Mart%C3%ADn-jeziel_guijarro.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        color: white; filter:alpha(opacity=60); opacity:.6;
+        padding: 30px;
+    }
+
+    .div__grados2 {
+        grid-area: 25 grados;
+        background-color: rgb(223, 197, 164);
+        padding: 30px;
+        color: white;
+    }
+
+    .div__grados1 {
+        grid-area: 25 grados;
+        background-color: rgb(185, 166, 142);
+        padding: 30px;
+        color: white;
+    }
+
+    .div__grados {
+        grid-area: 25 grados;
+        background-color: rgb(173, 160, 143);  
+        padding: 30px;
+        color: white;
+    }
+
+    .div__Ranking {
+        grid-area: Ranking;
+        background-color: rgb(173, 160, 143); 
+        padding: 30px;
+        color: white;
+    }
+
+    .div__Ranking2 {
+        grid-area: Ranking;
+        background-color: rgb(185, 166, 142);
+        padding: 30px;
+        color: white;
+    }
+
+    .div__Ranking3 {
+        grid-area: Ranking;
+        background-color: rgb(223, 197, 164);
+        padding: 30px;
+        color: white;
+    }
+}
+
+/*Bloque 8*/ 
+
+.main__categorias {
+
+    display: flex;
+    justify-content: center;
+
+    .div__categorias {
+        width: auto;
+        text-decoration: none;
+        text-align: center;
+        justify-content: center;
+        background-color: #f7d9cb;
+        padding: 10px; 
+        overflow-x: hidden; 
+        height: 15rem;
+    }
+    
+    .p__popular {
+        color: #020001;
+        font-weight: bold;
+    }
+
+    .p__lista {
+        padding: 10px;
+        margin: 10px;
+        line-height: 1.4;
+    }
+}
+
+.img__categorias {
+    height: 16.2rem;
+}
+
+/*Bloque 9*/
+
+.aside__servicios {
+    display: flex;
+    justify-content: center; 
+
+    
+    .div__servicios {
+        width: 300px;
+        border-top: solid 1px black;
+        border-left: solid 1px black;
+        border-color: black;
+        border-right: solid 1px black;
+        border-bottom: solid 1px black;
+        padding: 10px;
+        margin: 10px;
+        border-radius:150px;
+    }
+
+    .div__zoom {
+        transition: transform .2s; 
+    }
+        
+    .div__zoom:hover {
+        transform: scale(1.1); 
+    }
+
+    .p__servicios {
+        font-weight: bold;
+        font-size: larger;
+    }
+}
+
