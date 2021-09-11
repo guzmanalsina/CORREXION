@@ -211,7 +211,7 @@ $(document).ready(function(){
   <p>¿Sentís que te cuesta la gramática?</p>
   <p>¿Cómo vas con la puntuación?</p>
   <p>¡Este lugar es para vos!</p>
-  <img src="https://cdn.icon-icons.com/icons2/930/PNG/512/arrow-down_icon-icons.com_72377.png" width="30px">
+  <img src="./images/iconflecha.png" width="30px">
   </div4>`
   );
 }
